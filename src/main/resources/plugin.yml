@@ -1,0 +1,8 @@
+name: "${project.name}"
+version: "${project.version}"
+description: "${project.description}"
+author: "Commandcracker"
+main: "${project.groupId}.${project.artifactId}.${project.name}"
+website: "${project.url}"
+api-version: "1.13"
+prefix: "${project.name}"
