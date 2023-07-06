@@ -1,0 +1,27 @@
+{
+    "loader": {
+        "name": "java_plain",
+        "version": "1.0"
+    },
+    "license": "MIT",
+    "plugins": [
+        {
+            "id": "${project.artifactId}",
+            "entrypoint": "${project.groupId}.${project.artifactId}.Sponge${project.name}",
+            "name": "${project.name}",
+            "description": "${project.description}",
+            "version": "${project.version}",
+            "branding": {},
+            "links": {
+                "homepage": "${project.url}",
+                "source": "${project.url}",
+                "issues": "${project.url}/issues"
+            },
+            "contributors": [
+                {
+                    "name": "Commandcracker"
+                }
+            ]
+        }
+    ]
+}

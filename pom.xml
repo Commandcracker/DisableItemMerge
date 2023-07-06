@@ -25,6 +25,13 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots</url>
         </repository>
 
+        <!-- Sponge Maven -->
+        <repository>
+            <id>sponge-repo</id>
+            <name>Sponge Maven Repository</name>
+            <url>https://repo.spongepowered.org/repository/maven-public/</url>
+        </repository>
+
     </repositories>
 
     <dependencies>
@@ -34,6 +41,15 @@
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <version>1.13.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Sponge API -->
+        <dependency>
+            <groupId>org.spongepowered</groupId>
+            <artifactId>spongeapi</artifactId>
+            <version>8.0.0</version>
+            <type>jar</type>
             <scope>provided</scope>
         </dependency>
 
@@ -63,7 +79,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
+                <version>3.3.0</version>
                 <configuration>
                     <archive>
                         <addMavenDescriptor>false</addMavenDescriptor>
@@ -75,7 +91,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <debug>true</debug>
                     <debuglevel>lines,vars,source</debuglevel>
