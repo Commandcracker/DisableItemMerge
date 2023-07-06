@@ -1,0 +1,9 @@
+name: "${project.name}"
+version: "${project.version}"
+main: "${project.groupId}.${project.artifactId}.${project.name}"
+description: "${project.description}"
+author: "Commandcracker"
+website: "${project.url}"
+api-version: 1.19
+prefix: "${project.name}"
+folia-supported: true
